@@ -1,27 +1,26 @@
-# React + TypeScript + Vite
+## Gestão de Evento
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> front end de um gestor de eventos
 
-Currently, two official plugins are available:
+## Instalando
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+uma introdução para a configuração minima que você precisa para rodar o programa
 
-## Expanding the ESLint configuration
+### Instalar Dependencias de projeto:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+-   [NodeJS](https://nodejs.org/)
+    -   Stable version (v18.7.0^) is recommended
+-   [Bash](https://git-scm.com/downloads)
+-   [Yarn](https://yarnpkg.com/getting-started)
 
-- Configure the top-level `parserOptions` property like this:
+### Configurações iniciais:
+é recomendado você utilizar o backend do projeto para ter acesso total a ele.
+-   [Backend](https://github.com/joaolira00/Events-Manager-Backend/tree/devBranch)
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+### Preparação após instalação :
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. Instalar as dependências
+    - `yarn`
+2. Iniciar o projeto
+   -`yarn dev`
+3. Implementar a url da API.
