@@ -30,7 +30,7 @@ function App() {
               eventId={eventData.id}
             />
           ))}
-          {isModalOpen && <Modal closeModal={handleOpenModal} />} //renderiza o modal se isOpenModal for true
+          {isModalOpen && <Modal closeModal={handleOpenModal} />}
           <button onClick={handleOpenModal} className="container-button">
           <FontAwesomeIcon icon={faPlus} />
           </button>
