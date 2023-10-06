@@ -1,5 +1,6 @@
 import { z } from "zod";
 
+//controla os inputs mostrando os tipos e mensagens de erro
 export const eventSchema = z.object({
   title: z.string({required_error: 'O nome do evento é obrigatório.'}),
   local: z.string({required_error: 'O local do evento é obrigatório.'}),
@@ -14,4 +15,4 @@ export const eventSchema = z.object({
   image: z.string({required_error: 'Informe uma URL válida.'}).url(),
 });
 
-  export type EventSchemaData = z.infer<typeof eventSchema>
+  export type EventSchemaData = z.infer<typeof eventSchema> //define o tipo do schema
