@@ -7,11 +7,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
-  const { data } = useEventData();
+  const { data } = useEventData(); //data da api
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleOpenModal = () => {
-    setIsModalOpen((prev) => !prev);
+    setIsModalOpen((prev) => !prev); //abre o modal entre true e false
   };
 
   return (
@@ -19,7 +19,7 @@ function App() {
       <div className="container-grid">
         <h1>Gestão de Eventos</h1>
         <div className="card-grid">
-          {data?.map((eventData) => (
+          {data?.map((eventData) => ( //rendereiza eventos como um card
             <Card
               key={eventData.id}
               image={eventData.image}
@@ -30,7 +30,7 @@ function App() {
               eventId={eventData.id}
             />
           ))}
-          {isModalOpen && <Modal closeModal={handleOpenModal} />}
+          {isModalOpen && <Modal closeModal={handleOpenModal} />} //renderiza o modal se isOpenModal for true
           <button onClick={handleOpenModal} className="container-button">
           <FontAwesomeIcon icon={faPlus} />
           </button>
